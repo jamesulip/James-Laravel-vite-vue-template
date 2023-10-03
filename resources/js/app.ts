@@ -3,4 +3,15 @@ import {createApp} from 'vue'
 
 import App from './App.vue'
 
-createApp(App).mount("#app")
+
+
+
+const app = createApp(App)
+
+
+Object.values(import.meta.glob<{ install: any }>('./modules/*.ts', { eager: true }))
+.forEach(i => i.install?.(app))
+
+
+
+app.mount("#app")
