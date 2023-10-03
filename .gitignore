@@ -17,3 +17,6 @@ yarn-error.log
 /.fleet
 /.idea
 /.vscode
+typed-router.d.ts
+resources/js/auto-imports.d.ts
+typed-router.d.ts
