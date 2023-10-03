@@ -15,7 +15,8 @@ export default defineConfig({
             dts: 'resources/js/auto-imports.d.ts',
             imports:[
                 VueRouterAutoImports,
-            ]
+                'vue'
+            ],
         }),
         vue(),
         laravel({
